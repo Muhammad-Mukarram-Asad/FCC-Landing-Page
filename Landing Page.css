@@ -1,0 +1,385 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #eee;
+    /* font-family: 'Lato', sans-serif; */
+}
+#header
+{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color:#eee;
+}
+
+#header-img
+{
+
+    justify-content: flex-start;
+    width: 200px;
+    height: 50px;
+    margin-top: 7px;
+}
+#nav-bar
+{
+    display: flex;
+    justify-content:flex-end;
+    padding-top: 15px;
+    /* padding-left: 80px; */
+}
+
+.nav li
+{
+    list-style: none;
+    font-size: 25px; 
+    padding-left: 20px;
+
+}
+.nav-item
+{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.nav-link:hover
+{
+    color: blue;
+}
+
+#bars
+{
+    text-align: right;
+    display: none;
+}
+#cross_sign
+{
+    font-size: 30px;
+    color: red;
+    display: none;
+}
+.fa-bars
+{
+    font-size: 25px;
+    padding-top: 10px;
+}
+.intro
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+.intro h1
+{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+
+}
+.intro h1
+{
+    text-align: center;
+}
+#email
+{
+   /* width: 350px; */
+   height: 40px;
+   border: 2px solid black;
+   border-radius: 10px;
+   font-size: 25px;
+   text-indent: 10px;
+   padding: 20px;
+   margin-top: 20px;
+}
+#submit
+{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#submit:hover{
+    color: white;
+    background-color: black;
+}
+#Features
+{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    margin-top: 150px;
+}
+
+.inner_feature
+{
+    display: flex;
+    margin: 10px;
+    padding-left: 20px;
+}
+.hp
+{
+    margin-left: 23px;
+    padding-bottom: 10px;
+}
+.hp h2
+{
+    font-family:"Lato', sans-serif;" ;
+    font-weight: bolder;
+}
+.hp p
+{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fa-fire, .fa-truck, .fa-battery-full
+{
+    color: orange;
+}
+.fa-fire
+{
+    font-size: 63px;
+}
+
+#video
+{
+   display: block;
+   margin-top: 20px;
+}
+
+#pricing
+{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start; */
+    /* margin-left: 50px; */
+    margin-top: 20px;
+}
+.innerBox
+{
+    /* width: 400px;
+    height: 450px; */
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+.innerBox h3
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    background-color: grey;
+    /* width: 100%; */
+    height: 40px; 
+    padding-top: 10px;
+    font-size: 23px;
+    height: 55px;
+}
+.innerBox h4
+{
+    margin: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.innerBox p
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.innerBox button
+{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid white;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    
+}
+.innerBox button:hover
+{
+    color: yellow;
+    background-color: black;
+    border: 2px solid black;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.inner_footer_1 h2
+{
+    color: blue;
+    font-style: italic;
+    font-weight: bolder;
+}
+.inner_footer_1 p
+{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.social_icons
+{
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.inner_footer_2
+{
+    display: flex;
+    flex-direction: column;
+}
+.inner_footer_2 ul
+{
+    display: flex;
+}
+.inner_footer_2 ul li
+{
+    list-style: none;
+    font-size: 20px;
+    color: black;
+    margin-top: 25px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+.inner_footer_2 ul li:hover
+{
+    color: blue;
+    text-decoration: wavy;
+    cursor: pointer;
+}
+.inner_footer_2 p
+{
+    color: red;
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: lightpink;
+        margin: 10px 0;
+        padding: 0px;
+    }
+    .inner_footer_1
+    {
+        margin-left: 0;
+    }
+    .inner_footer_2 ul
+    {
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+    .inner_footer_2 ul li
+    {
+        margin-left: 10px;
+    }
+    .social_icons
+    {
+        display: flex;
+        width: 0;
+        height: 0;
+        margin-left: -5px;
+    }
+    .fa-brands
+    {
+        padding-right: 20px;
+    }
+
+    #pricing
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .innerBox
+    {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .innerBox button
+    {
+        display: block;
+        margin: 10px auto;
+    }
+       
+    #nav-bar {
+          display: none;
+        }
+        
+        #bars
+        {
+            display: block;
+            text-align:end;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+        .bar_on_click
+        {
+            position: absolute;
+            left: 100px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 0px;
+            text-decoration-line: underline;
+        }
+
+      }
+
+      /* @media screen and (min-width: 768px) {
+        #header {
+          width: 768px;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        #header {
+          width: 1024px;
+        }
+      }
+      @media screen and (min-width: 1300px) {
+        #header {
+          width: 1300px;
+        }
+      }
+      @media screen and (min-width: 1636px) {
+        #header {
+          width: 1636px;
+        } 
+}
+*/

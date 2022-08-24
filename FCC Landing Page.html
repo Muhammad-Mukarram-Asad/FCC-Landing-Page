@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Landing Page.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <div id="header" class="container">
+        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo">
+        <nav id="nav-bar">
+            <ul class="nav">
+                <li><a href="#Features" class="nav-item">Features</a></li>
+                <li><a href="#video" class="nav-item">How it works</a></li>
+                <li><a href="#pricing" class="nav-item">Pricing</a></li>
+            </ul>
+        </nav>
+        <div id="bars" onclick="responsive()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <p id="cross_sign" onclick="removing()">&#10006;</p>
+    </div>
+
+    <div id="intro_section" class="intro container">
+        <h1>We Are Here For you</h1>
+        <form action="https://www.freecodecamp.com/email-submit" id="form" class="form-group">
+            <input type="email"  id="email" class="container" placeholder="Enter your email here" required> <br>
+            <input type="submit" id="submit" class="btn btn-primary" value="Submit Here">
+        </form>
+    </div>
+
+    <div id="Features" class="container">
+        <div class="inner_feature container">
+            <div class="icon">
+                <i class="fa fa-3x fa-fire"></i>
+            </div>
+            <div class="hp">
+                <h2>Premium Materials</h2> 
+                <p>
+                    Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+                </p>
+            </div>
+        </div>
+
+        <div class="inner_feature container">
+            <div class="icon">
+                <i class="fa fa-3x fa-truck"></i>
+            </div>
+            <div class="hp">
+                <h2>Fast Shipping</h2>
+                <p>
+                    We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.               
+                 </p>
+            </div>
+        </div>
+
+        <div class="inner_feature container">
+            <div class="icon">
+                <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="hp">
+                <h2>Quality Assurance</h2>
+                <p>
+                    For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- video code below: -->
+
+    <iframe class="container" id="video" height="350px" src="https://www.youtube.com/embed/O2zYuzI7jhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- pricing div below: -->
+
+    <div id="pricing" class="container">
+            <div class="innerBox">
+                <h3>Shalwar Kameez</h3>
+                <h4>600&euro;</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. <br>
+                     adipisicing elit. Quia id maxime ullam. <br>
+                     eius quas sint eum architecto accusantium magni <br>
+                      saepe iste magnam quasi, odit esse in expedita, <br>
+                      dolore illo consequuntur.
+                </p>
+                <button> SELECT</button>
+            </div>
+
+            <div class="innerBox">
+                <h3> Men T-Shirts & Trousers</h3>
+                <h4>900&euro;</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. <br>
+                     adipisicing elit. Quia id maxime ullam. <br>
+                     eius quas sint eum architecto accusantium magni <br>
+                      saepe iste magnam quasi, odit esse in expedita, <br>
+                      dolore illo consequuntur.
+                </p>
+                <button> SELECT</button>
+            </div>
+
+            <div class="innerBox">
+                <h3>Casual Wear Garments</h3>
+                <h4>700&euro;</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. <br>
+                     adipisicing elit. Quia id maxime ullam. <br>
+                     eius quas sint eum architecto accusantium magni <br>
+                      saepe iste magnam quasi, odit esse in expedita, <br>
+                      dolore illo consequuntur.
+                </p>
+                <button> SELECT</button>
+            </div>
+    </div>
+
+    <footer class="container">
+        <div class="inner_footer_1">
+                <h2> <img src="https://www.codeguage.com/Images/logo-black.svg" width="150px"
+                    height="30px"> </h2>
+                <p> A platform for learning computer science, <br> programming and mathematics,                     all for free.
+                </p>
+        </div>
+
+        <div class="social_icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+        <div class="inner_footer_2">
+            <ul>
+                <li> Privacy</li>
+                <li> Terms</li>
+                <li> Contact</li>
+            </ul>
+            <p>Mark © 2022. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        var bar_item = document.getElementById('bars');
+        var navElements = document.getElementById('nav-bar');
+        var intro_section = document.getElementById('intro_section');
+        var cross = document.getElementById('cross_sign');
+
+
+        function responsive()
+        {
+            if(navElements.style.display == "block")
+            {
+                navElements.style.display = "none";
+                bar_item.style.display = "block";
+            }
+            else
+            {
+                bar_item.style.display = "none";
+                navElements.style.display = "block";
+                navElements.className += " bar_on_click";
+                cross.style.display = "block";
+            }
+        }
+
+        function removing()
+        {
+            navElements.style.display = "none";
+            bar_item.style.display = "block";
+            cross.style.display = "none";
+        }
+    </script>
+</body>
+</html>
